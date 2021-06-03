@@ -53,12 +53,12 @@ header {
     z-index: 10;
 }
 
-.close, .login-overlay h3, .signup-overlay > h3, .about-overlay > h3 {
+.close-login, .close-signup, .close-about, .login-overlay h3, .signup-overlay > h3, .about-overlay > h3 {
     position: absolute;
     color: var(--secondary-color);
 }
 
-.close {
+.close-login, .close-signup, .close-about {
     right: 1em;
     color: white;
     text-decoration: none;
@@ -122,7 +122,7 @@ form > p, .terms > p  {
     display: flex;
     
 }
-.terms > p > a {
+form > p> a, .terms > p > a {
     text-decoration: none;
     color: var(--secondary-color);
     margin-left: .5em;
