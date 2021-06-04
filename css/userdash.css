@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #360A14;
+    --secondary-color:  #961D43;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    margin-bottom: 2em;
+}
+
+.burger > div {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: var(--primary-color);
+}
+
+
+
+.user-profile, .profile-details > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+
+.poster-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1.5em;
+    background-color: #F6F6F6;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    text-decoration: none;
+    font-size: .7rem;
+    font-weight: 600;
+    color: black;
+    margin-left: 1em;
+}
+
+.post-opts > div {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+
+
+/*============ Post Styling ======================*/
+
+.post-activity {
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.ratings {
+    padding: .5em .2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings > button {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: none;
+}
+
+.likes, .comments, .dislikes {
+    margin-left: 1em;
+}
+
+
+.caption {
+    padding: .5em 1em;
+}
+
+.caption > p, .comment > p {
+    font-size: .9rem;
+    margin-top: .8em;
+}
+.profile-link, .comment-details {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link > img, .comment-details > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.link, .comment-details a{
+    text-decoration: none;
+    color: black;
+    font-size: .7rem;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
+.caption-container > button {
+    border: none;
+    background: none;
+    padding: 1em 1em;
+}
+
+.comments {
+    display: none;
+}
+
