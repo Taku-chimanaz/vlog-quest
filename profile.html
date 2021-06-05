@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+
+    <header>
+
+        <div class="profile-image-container">
+            <img class="image" src="images/profile.jpg" width="50px" alt="Profile image of user">
+        </div>
+
+        <div class="user-information">
+            <p class="profile-username">John Doe</p>
+            <p class="followers">0 Followers</p>
+        </div>
+
+        <article class="bio">
+            <p>The name is John Doe and this is the baddest account on this platform.Follow me for cool and exciting vlogs.</p>
+        </article>
+
+        <div class="button-container">
+            <button class="edit-profile-button">Edit Profile</button>
+        </div>
+
+    </header>
+
+    <div class="edit-profile-overlay">
+        <a href="#" class="close">&times;</a>
+
+       <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <label for="gender">Male</label>
+            <input type="text" name="gender" placeholder="Enter Your Gender">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="" cols="30" rows="3">
+               
+            </textarea>
+            <label for="dob">D.O.B</label>
+            <input type="text" placeholder="Enter Your D.O.B">
+            <button type="submit">Update Profile</button>
+       </form>
+    </div>
+
+    <main>
+        
+        <nav>
+            <button class="posts-button">Posts</button>
+            <button class="liked-posts-button">Likes</button>
+        </nav>
+
+        <div class="posts">
+
+            <div class="post">
+            
+                <div class="poster-details">
+                    
+                    <div class="profile-details">
+                        <img src="images/profile.jpg" alt="" width="40px">
+                        <a href="#" class="username">Jane Doe</a>
+                    </div>
+    
+                    <div class="post-opts">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+    
+                </div>
+    
+                <div class="post-container">
+                    <video src="videos/video.mp4" controls width="100%"></video>
+                </div>
+    
+                <div class="post-activity">
+    
+                    <div class="ratings">
+                        <button><img src="images/like.svg" width="28px" alt=""><span class="likes">0</span></button>
+                        <button><img src="images/comment.png" width="28px"  alt=""><span class="comments">0</span></button>
+                        <button><img src="images/dislike.svg" width="28px" alt=""><span class="dislikes">0</span></button>
+                    </div>
+    
+                    <div class="caption-container">
+    
+                        <div class="caption">
+    
+                            <div class="profile-link">
+                                <img src="images/profile.jpg" alt="" width="40px">
+                                <a href="#" class="link">Jane Doe</a>
+                            </div>
+    
+                            <p>Wow,just posted my first post and l like it</p>
+    
+                        </div>
+                        <button>View All comments</button>
+    
+                    </div>
+    
+                    <div class="comments">
+                        
+                        <div class="comment">
+                            <div class="comment-details">
+                                <img src="images/profile.jpg" alt="" width="40px">
+                                <a href="#">Jonh Doe</a>
+                            </div>
+                            <p>This is my first comment</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="liked-posts">
+
+            <div class="liked-post">
+            
+                <div class="poster-details">
+                    
+                    <div class="profile-details">
+                        <img src="images/profile.jpg" alt="" width="40px">
+                        <a href="#" class="username">Paul Doe</a>
+                    </div>
+    
+                    <div class="post-opts">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+    
+                </div>
+    
+                <div class="post-container">
+                    <video src="videos/video.mp4" controls width="100%"></video>
+                </div>
+    
+                <div class="post-activity">
+    
+                    <div class="ratings">
+                        <button><img src="images/like.svg" width="28px" alt=""><span class="likes">0</span></button>
+                        <button><img src="images/comment.png" width="28px"  alt=""><span class="comments">0</span></button>
+                        <button><img src="images/dislike.svg" width="28px" alt=""><span class="dislikes">0</span></button>
+                    </div>
+    
+                    <div class="caption-container">
+    
+                        <div class="caption">
+    
+                            <div class="profile-link">
+                                <img src="images/profile.jpg" alt="" width="40px">
+                                <a href="#" class="link">Jane Doe</a>
+                            </div>
+    
+                            <p>Wow,just posted my first post and l like it</p>
+    
+                        </div>
+                        <button>View All comments</button>
+    
+                    </div>
+    
+                    <div class="comments">
+                        
+                        <div class="comment">
+                            <div class="comment-details">
+                                <img src="images/profile.jpg" alt="" width="40px">
+                                <a href="#">Jonh Doe</a>
+                            </div>
+                            <p>This is my first comment</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="js/profile.js"></script>
+</body>
+</html>
