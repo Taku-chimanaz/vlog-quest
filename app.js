@@ -1,7 +1,7 @@
 const express = require('express');
 const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 const path = require('path');
-const generalRoutes = require('./routes/generalRoutes')
+const generalRoutes = require('./routers/generalRoutes')
 
 // Creating the express app
 const app = express();
