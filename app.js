@@ -1,6 +1,7 @@
 const express = require('express');
 const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
-const path = require('path')
+const path = require('path');
+const generalRoutes = require('./routes/generalRoutes')
 
 // Creating the express app
 const app = express();
@@ -16,26 +17,10 @@ app.set('view engine', 'handlebars')
 // Middlewares
 
 app.use(express.static(path.resolve(__dirname, 'public')))
+
 // Routes
+app.use('/', generalRoutes);
 
-
-app.get('/', (req,res) =>{
-    res.render('index', { style: 'css/main.css', script: 'js/index.js', title: 'Vlog Quest'})
-});
-
-app.get('/profile', (req, res) => {
-    res.render('profile', { style: 'css/profile.css', script: 'js/profile.js', title: 'User Profile'});
-});
-
-app.get('/user-dashboard', (req,res)=>{
-
-    res.render('userdash', { style: 'css/userdash.css', script: 'js/userdash.js', title: 'User Dashboard'})
-});
-
-app.get('scheduled-posts', (req, res)=>{
-    
-    res.render('scheduled-post', { style: 'css/sheduled-posts.css', script: 'js/scheduled-post.js', title: 'User Dashboard'})
-})
 
 
 
